@@ -1,0 +1,183 @@
+.section {
+    position: relative;
+    top: em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    .first{
+        font-size: 3em;
+        font-weight: 200;
+
+    }
+    .data{
+        letter-spacing: 3px;
+        text-align: center;
+        width: 50%;
+        font-weight: lighter;
+        margin-bottom: 20px;
+        margin-top: -24px;
+    }
+   
+  }
+  
+  .col {
+    display: grid;
+    grid-template-columns: repeat(3, 3fr);
+    gap: 20px;
+    transition: 2s;
+    margin-top: 30px;
+  }
+  
+  .col1 {
+    transition: 0.9s;
+    margin-top: 10px;
+
+
+  
+  }
+  
+  .col1:hover {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+
+  }
+  
+  .img {
+    position: relative;
+  }
+  
+  .img img {
+    width: 100%;
+    height: 97%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    transition: 0.9s;
+    // filter: blur(4px);
+  }
+  
+  .info {
+    position: absolute;
+    width: 90%;
+    height: 46vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin-top: -324px;
+    margin-left: 13px;
+    opacity: 0;
+    padding: 10px;
+    gap: 10px;
+    transition: 0.9s;
+  }
+  
+  .info h3 {
+    margin-bottom: -10px;
+    font-size: 1.4em;
+    color: black;
+    font-weight: bolder;
+  }
+  
+  .info p {
+    font-weight: lighter;
+  }
+  
+  
+  
+  .filter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+  }
+  
+  .filter .btn {
+    padding: 8px 16px;
+    border-radius: 4px;
+    background-color: lightgray;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .filter .btn:hover {
+    background-color: rgb(98, 66, 255);
+    color: white;
+  }
+  
+  .filter .btn.active {
+    background-color: rgb(79, 46, 244);
+    color: white;
+  }
+  .col1:hover .info {
+    margin-top: 100;
+    opacity: 10;
+    z-index: 9999;
+    background-color: rgba(255, 255, 255, 0.24);
+  }
+  .col1:hover img {
+ filter: blur(4px);
+
+  }
+   
+  .filter select {
+    display: none;
+  }
+//   .img::before {
+//     content: "";
+//     position: absolute;
+//     left: -50px;
+//     top: 0;
+//     width: 0;
+//     height: 100%;
+//     background-color: rgb(120, 153, 244);    
+//     transform: skewX(180deg);
+//     z-index: -1;
+//     transition: width 1000ms;
+//   }
+  
+//   .img:hover::before {
+//     width: 90%;
+//   }
+  
+//   .img::after {
+//     content: "";
+//     position: absolute;
+//     right: -50px;
+//     top: 0;
+//     width: 0;
+//     height: 100%;
+//  background-color: rgb(120, 153, 244);
+//     transform: skewX(180deg);
+//     z-index: -1;
+//     transition: width 1000ms;
+//   }
+  
+//   .img:hover::after {
+//     width: 90%;
+//   }
+
+
+@media only screen and (max-width:900px){
+  .section{
+    .first{
+      font-size: 2em;
+    }
+    .data{
+      width: 100%;
+    }
+    .filter .btn {
+      display: none;
+    }
+    
+    .filter select {
+      display: block;
+    }
+  
+    .col{
+     display: flex;
+     flex-direction: column;
+    }
+  }
+ 
+}

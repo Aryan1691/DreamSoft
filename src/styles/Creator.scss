@@ -1,0 +1,67 @@
+.Creator{
+    margin-top: 100px;
+    
+    h2{
+        font-size: 3em;
+        font-weight: lighter;
+    }
+    .creatorContainer{
+  
+       display: flex;
+       gap: 10px;
+       .creators{
+        position: relative;
+     
+    
+        .images1{
+            position: relative;
+            filter: grayscale(10);
+            transition: 0.9s;
+            
+        }
+        &:hover{
+         .images1{
+            filter: grayscale(0);
+         }
+         .data1{
+            width: 70%;
+         }
+        }
+        .data1{
+            position: absolute;
+            bottom: 10px;
+            width: 60%;
+            background-color: rgba(0,0,0,0.3);
+            transition: 0.9s;
+            color: white;
+            padding: 10px;
+            padding-bottom: 20px;
+            
+           div{
+            margin-top: -27px;
+            font-weight: lighter;
+           }
+           h3{
+            font-size: 1.3em;
+            transition: 0.9s;
+            &:hover{
+                color: rgb(51, 51, 220);
+            }
+           }
+          
+        }
+       }
+    }
+   
+}
+@media only screen  and (max-width:700px){
+    .Creator{
+        h2{
+            text-align: center;
+        }
+        .creatorContainer{
+           display: grid;
+           grid-template-columns: repeat(1,1fr);
+        }
+    }
+}

@@ -1,0 +1,319 @@
+.cont2{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
+    margin-top: 100px;
+
+
+    .year{
+        background:linear-gradient(90deg,red,blue,rgb(242, 23, 23));
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+        font-size: 25rem;
+        font-weight: bolder;
+        animation-name: ident;
+        animation-iteration-count: infinite;
+        background-size: 200%;
+        animation-duration: 2s;
+        animation-timing-function: linear;
+        z-index: 999;
+    }
+    .exp{
+        display: flex;
+        flex-direction: column;
+        margin-top: -40px;
+        margin-left: 130px;
+        width: 100%;
+      
+        .one{
+            font-size: 2em;
+            width: 40%;
+            border-left: 4px solid black;
+            padding-left: 10px;
+            
+        }
+        .two{
+            width: 60%;
+            margin-top: 25px;
+        }
+    }
+    .about {
+        display: grid;
+     
+        grid-template-columns: repeat(2, 1fr);
+        padding: 10px;
+        margin-top: -40px;
+        h2{
+          font-size: 3em;
+        }
+       
+      }
+      .ele{
+        h2{
+          font-size: 4em;
+          
+        }
+        >.words{
+          width: 100%;
+          margin-top: -50px;
+        }
+      }
+      .about .ele:nth-child(1) {
+        border-bottom: 2px solid black;
+        margin-bottom: -0.6px;
+        padding: 30px;
+       
+      }
+      
+      .about .ele:nth-child(2) {
+        border-left: 2px solid black;
+        margin-left: -0.6px;
+        padding: 30px;
+        padding-bottom: 60px;
+      }
+      
+      .about .ele:nth-child(3) {
+        border-right: 2px solid black;
+        margin-right: -1px;
+        padding: 30px;
+        margin-top: -50px;
+        margin-bottom: -10.6px;
+      }
+      
+      .about .ele:nth-child(4) {
+        border-top: 2px solid black;
+     
+        padding-top: 0px;
+        padding-left: 30px;
+        margin-top: -40px;
+        padding-bottom: 100px;
+      }
+      
+      
+}
+
+@keyframes ident {
+    to{
+        background-position: 0% center;
+    }
+    from{
+        background-position: -200% center;
+    }
+}
+
+.but {
+  padding: 1em 2em;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: #040606;
+  transition: all 1000ms;
+  font-size: 15px;
+  position: relative;
+  overflow: hidden;
+  margin-top: 10px;
+  background-color: white;
+  outline: 1px solid black;
+}
+
+.but:hover {
+  color: black;
+  transform: scale(1);
+  box-shadow: 4px 5px 17px -4px #268391;
+}
+
+.but::before {
+  content: "";
+  position: absolute;
+  left: -50px;
+  top: 0;
+  width: 0;
+  height: 100%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  background: linear-gradient(45deg,rgb(68, 0, 255),blue,rgb(241, 22, 172));
+  color:transparent;
+
+  transform: skewX(60deg);
+  z-index: -1;
+  transition: width 1000ms;
+}
+
+.but:hover::before {
+  width: 100%;
+  color: white;
+}
+
+.but::after {
+  content: "";
+  position: absolute;
+  right: -50px;
+  top: 0;
+  width: 0;
+  height: 100%;
+
+  background-clip: text;
+  -webkit-background-clip: text;
+  background: linear-gradient(45deg,blue,rgb(255, 28, 161),rgb(246, 19, 19));
+  color:transparent;
+  
+  transform: skewX(60deg);
+  z-index: -1;
+  transition: width 1000ms;
+}
+
+.but:hover::after {
+  width: 100%;
+  color: white;
+  text-decoration-color: azure;
+}
+ 
+.star {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 130px;
+  left: 1em;
+  
+  background: linear-gradient(45deg, red, blue, green); /* Set the initial color of the star */
+  clip-path: polygon(
+    50% 0%,
+    63% 38%,
+    100% 38%,
+    69% 59%,
+    82% 100%,
+    50% 75%,
+    18% 100%,
+    31% 59%,
+    0% 38%,
+    37% 38%
+  );
+}
+
+
+.star1{
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  top: 120px;
+  left: 1em;
+  
+  background: linear-gradient(45deg,rgb(255, 19, 220),blue,green); /* Set the color of the star */
+  clip-path: polygon(
+    50% 0%,
+    63% 38%,
+    100% 38%,
+    69% 59%,
+    82% 100%,
+    50% 75%,
+    18% 100%,
+    31% 59%,
+    0% 38%,
+    37% 38%
+  );
+}
+
+.star2{
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  top: 122px;
+  left: 420px;
+  
+background: linear-gradient(45deg,red,blue,green);/* Set the color of the star */
+  clip-path: polygon(
+    50% 0%,
+    63% 38%,
+    100% 38%,
+    69% 59%,
+    82% 100%,
+    50% 75%,
+    18% 100%,
+    31% 59%,
+    0% 38%,
+    37% 38%
+  );
+}
+.images{
+  display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
+    margin-top: -30px;
+    .im{
+      border: 2px solid black;
+      gap: 10px;
+      width: 90%;
+      transition: color 0.9s, transform 0.9s;
+      border-radius: 2px;
+     
+   
+    filter: blur(1px);
+    }
+}
+
+.im:hover {
+
+  transform: scale(1.1);
+  box-shadow: 4px 5px 17px -4px #ff1bce;
+  background-clip: text;
+      -webkit-background-clip: text;
+      background: linear-gradient(45deg,rgb(252, 252, 255),rgb(255, 28, 161),rgb(246, 19, 19));
+      color:transparent;
+      filter: blur(0);
+}
+
+@media only screen and (max-width: 1200px) {
+
+.cont2{
+  .show{
+  margin-left: 90px;
+  width: 100%;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+
+  }
+}
+    .images{
+              margin-top: 30px;
+          }
+      .im{
+          margin-bottom: 40px
+        }
+        
+  .cont2{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+   
+  }
+  
+  .cont2 .one {
+    margin-left: 20px;
+    border-left: none !important;
+    border-bottom: 3px solid black;
+    
+  }
+  
+  .cont2 .about {
+    grid-template-columns: 1fr;
+  }
+  
+ 
+  .cont2 .ele {
+    padding: 20px;
+    border: none !important; /* Add this line to remove the border */
+  }
+  .cont2 .ele:nth-child(1),
+  .cont2 .ele:nth-child(2),
+  .cont2 .ele:nth-child(3),
+  .cont2 .ele:nth-child(4) {
+    
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+}
